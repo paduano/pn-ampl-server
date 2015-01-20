@@ -1,0 +1,7 @@
+model pn.mod;
+data pn.dat;
+option solver cplex;
+solve number_of_activated_places;
+display fire;
+display activated_places;
+display tokens;

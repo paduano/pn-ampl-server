@@ -1,0 +1,27 @@
+data;
+
+set IN_TRANSITIONS := #TRANSITION PLACE 
+(1,1) 
+(2,2)
+(3,0)
+(3,1)
+; 
+
+set OUT_TRANSITIONS := #PLACE TRANSITION
+(0,1)
+(0,2)
+(2,3)
+; 
+
+param: PLACES: initial_tokens :=
+          0     1
+          1     0
+          2     0
+;
+
+	
+param duration := 10;
+param n_places := 2;
+param n_transitions := 3;
+
+param max_firing := 1000;
